@@ -1,0 +1,11 @@
+name: sample-app
+region: nyc
+services:
+  - name: web
+    github:
+      repo: jeanjacquesdah/-sample-app
+      branch: main
+      deploy_on_push: true
+    run_command: npm start
+    instance_size_slug: apps-s-1vcpu-0.5gb
+    http_port: 3000
